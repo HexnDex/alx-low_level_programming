@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - size of C var
+*main - prints the size of various types
 *Return: 0
 */
 int main(void)

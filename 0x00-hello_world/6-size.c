@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - main block, the prograam should prints the size of various types
+*main - size of C var
 *Return: 0
 */
 int main(void)

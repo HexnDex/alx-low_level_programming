@@ -1,38 +1,27 @@
 #include<stdlib.h>
 #include "main.h"
 /**
- * create_array - fxn to create array of chars
- *and initializes to specified character
- * @size: size of array
- * @c: character to initialize in array
+ * create_array - creates an array of chars.
+ * @size: size of the array.
+ * @c: storaged char
  *
- * Return: returns NULL if size is 0
- *OR fails and pointer to array if successfull
+ * Return: pointer of an array of chars
  */
-
 char *create_array(unsigned int size, char c)
 {
-	if (size == 0)
-	{
-		return (NULL);
-	}
-
-	char *array;
-
-	array = malloc(sizeof(c) * size);
-
-	if (array == NULL)
-	{
-		return (NULL);
-	}
-
+	char *cr;
 	unsigned int i;
 
+	if (size == 0)
+		return (NULL);
+
+	cr = malloc(sizeof(c) * size);
+
+	if (cr == NULL)
+		return (NULL);
+
 	for (i = 0; i < size; i++)
-	{
-		array[i] = c;
-	}
+		cr[i] = c;
 
-	return (array);
-
+	return (cr);
 }

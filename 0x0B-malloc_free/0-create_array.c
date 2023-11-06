@@ -1,3 +1,4 @@
+#include<stdlib.h>
 #include "main.h"
 /**
  * create_array - fxn to create array of chars
